@@ -1,26 +1,25 @@
+<!-- src/App.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <header>
+      
+    </header>
+    <LoginComponent></LoginComponent>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// Importa el componente LoginComponent con la capitalización correcta del nombre de archivo
+import LoginComponent from './components/LoginComponent';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LoginComponent // Registra el componente LoginComponent
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Tus estilos aquí */
 </style>
